@@ -353,7 +353,8 @@ ENDTEXT
     def guide_through_error
       puts
       puts "The answers you seek..."
-      puts Color.red(indent(failure.message).join)
+      puts "has been commented, to uncomment go to neo.rb:356"
+      # puts Color.red(indent(failure.message).join)
       puts
       puts "Please meditate on the following code:"
       puts embolden_first_line_only(indent(find_interesting_lines(failure.backtrace)))
